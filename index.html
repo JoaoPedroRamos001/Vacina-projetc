@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Saúde</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     
+        @media only screen and (max-width: 600px) {
+            header ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            header ul li {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            #mensagem-interativa {
+                text-align: center;
+            }
+
+            form {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+
+           
+            #infografico {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; 
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00539f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #0078d4;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #00539f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 8px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        form textarea {
+            resize: vertical;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 30px;
+        }
+        
+        form input[type="submit"] {
+            padding: 8px 20px;
+            background-color: #00539f;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #0078d4;
+        }
+        
+        h2#mensagem-interativa {
+            font-size: 24px;
+            color: #000000;
+            margin-top: 30px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Site de Saúde</h1>
+        <nav>
+            <ul>
+              
+                <li><a href="#postos de saude">Postos de Saúde</a></li>
+                <li><a href="#vacinas">Vacinas</a></li>
+                <li><a href="#grupos">Grupos Prioritários</a></li>
+                <li><a href="#datasus">DATASUS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="postos">
+     <h2>Postos de Saúde</h2>
+            <p>Texto sobre os postos de atendimento na área da saúde. <a href="enderecoubs.html">Clique aqui para acessar a localização dos postos de saúde em Juiz de Fora.</a></p>
+        </section>
+        <section id="postos">
+            
+        <article>
+            <h2>Info-gráfico de Vacinas</h2>
+            <img id="infografico" src="https://nova-escola-producao.s3.amazonaws.com/JagEmaKAk4TBU5AWegJ4bBbfTSNdRRQRDFZhtDXecmAwKar88Hk7ZAC4ahRE/tabela-vacina-empresas.png " alt="Info-gráfico de Vacinas">
+        </article>
+        <section id="vacinas">
+            <h2>Vacinas</h2>
+            <article>
+                <h3>Tipo de Vacina 1</h3>
+                <p>Informações sobre a vacina 1.</p>
+            </article>
+            <article>
+                <h3>Tipo de Vacina 2</h3>
+                <p>Informações sobre a vacina 2.</p>
+            </article>
+        </section>
+
+        <section id="grupos">
+            <h2>Grupos Prioritários</h2>
+            <p>Informações sobre os grupos prioritários para vacinação.</p>
+        </section>
+
+        <section id="datasus">
+            <h2>DATASUS</h2>
+            <p>DATASUS é o departamento de informática do Sistema Único de Saúde do Brasil. Trata-se de um órgão da Secretaria de Gestão Estratégica e Participativa do Ministério da Saúde, com a responsabilidade de coletar, processar e disseminar informações sobre saúde.</p>
+            <p>Caso queira acessar mais informações, clique <a href="https://datasus.saude.gov.br/">aqui</a>.</p>
+        </section>
+
+
+    </main>
+
+   
+    <h2 id="mensagem-interativa">Deixe sua mensagem interativa aqui!</h2>
+   
+    <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        
+        <label for="ddd">DDD:</label>
+        <select id="ddd" name="ddd">
+
+
+        </select> 
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+       
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <form id="mensagem-interativa" action="confirmacao.html" method="post">
+            <!-- Campos do formulário -->
+            <input type="submit" value="Enviar">
+        </form>
+    
+        <script>
+            const form = document.getElementById('');
+    
+            form.addEventListener('submit', function(event) {
+              
+                event.preventDefault();
+                
+               
+                setTimeout(function() {
+                    window.location.href = "confirmacao.html";
+                }, 2000); 
+            });
+        </script>
+    </form>
+</main>
+
+
+<script>cidadeInput.addEventListener('input', function () {
+    const cidade = cidadeInput.value.trim();
+    const dddEncontrado = cidadeDddMap[cidade];
+
+    if (dddEncontrado) {
+        dddSelect.innerHTML = '';
+
+        const option = document.createElement('option');
+        option.value = dddEncontrado;
+        option.textContent = `${dddEncontrado} - ${cidade}`;
+        dddSelect.appendChild(option);
+
+       
+        telefoneInput.value = '';
+
+        preencherTelefone();
+    } else {
+        console.log('Cidade não encontrada no mapeamento.');
+    }
+});
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dddSelect = document.getElementById('ddd');
+        const cidadeInput = document.getElementById('cidade');
+        const telefoneInput = document.getElementById('telefone');
+
+        
+        const cidadeDddMap = {
+            "Juiz de Fora": "32",
+            "São Paulo": "11",
+            "Rio de Janeiro": "21",
+            "Belo Horizonte": "31",
+            "Brasília": "61",
+            "Salvador": "71",
+            "Fortaleza": "85",
+            "Ubá": "32",
+            "Visconde do Rio Branco": "32",
+            "Bicas": "32",
+            "Matias Barbosa": "32",
+            "Lima Duarte": "32",
+            "Simão Pereira": "32",
+            "Contagem": "31",
+            "São João Del Rei": "32",
+            "Barbacena": "32",
+            "Cataguases": "32",
+            "Bicas": "32",
+            "Uberlandia":"32",
+            "Bahia":"77",
+            "Fortaleza": "85",
+            "Recife": "81",
+            "João Pessoa": "83",
+            "Natal": "84",
+            "Maceió": "82",
+            "Manaus": "92",
+            
+            
+        };
+
+        
+        function preencherTelefone() {
+            const dddSelecionado = dddSelect.value;
+            const numeroTelefone = telefoneInput.value;
+
+            telefoneInput.value = `(${dddSelecionado}) ${numeroTelefone}`;
+        }
+
+        cidadeInput.addEventListener('input', function () {
+    const cidade = cidadeInput.value.trim();
+    const dddEncontrado = cidadeDddMap[cidade];
+
+    if (dddEncontrado) {
+        dddSelect.innerHTML = '';
+
+        const option = document.createElement('option');
+        option.value = dddEncontrado;
+        option.textContent = `${dddEncontrado} - ${cidade}`;
+        dddSelect.appendChild(option);
+
+     
+        telefoneInput.value = '';
+
+        preencherTelefone();
+    } else {
+        console.log('Cidade não encontrada no mapeamento.');
+    }
+});
+
+        
+        dddSelect.addEventListener('change', preencherTelefone);
+    });
+</script>
+
+
+<script></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('nav ul li a');
+
+        for (const link of links) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+
+</html>
